@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class TaxApplication {
 	
-	@RequestMapping("/hello")
-	String home() {
-		return "Hello!";
+	@RequestMapping("/status")
+	String status() {
+		return "OK";
 	}
 
 	public static void main(String[] args) {
