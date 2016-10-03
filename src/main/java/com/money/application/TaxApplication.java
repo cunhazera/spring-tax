@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = { "com.money" })
 public class TaxApplication {
-	
+
 	@RequestMapping("/status")
 	public String status() {
 		return "OK";
